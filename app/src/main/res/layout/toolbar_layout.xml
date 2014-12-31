@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <ImageView
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/statusMargin"
+        android:background="?attr/colorPrimary"
+        android:contentDescription="Status bar Replacement" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="false"
+        android:layout_below="@+id/statusBar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/searchView"
+        android:layout_gravity="end"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
